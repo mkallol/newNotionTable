@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>My Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Link</th>
+                <th>Price</th>
+                <th>Ordered</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <td contentEditable="true" onblur="updateTableData()">Item 1</td>
+                <td contentEditable="true" onblur="updateTableData()"><a href="#">Link 1</a></td>
+                <td contentEditable="true" onblur="updateTableData()">$10.00</td>
+                <td contentEditable="true" onblur="updateTableData()">5</td>
+            </tr>
+            <tr>
+                <td contentEditable="true" onblur="updateTableData()">Item 2</td>
+                <td contentEditable="true" onblur="updateTableData()"><a href="#">Link 2</a></td>
+                <td contentEditable="true" onblur="updateTableData()">$20.00</td>
+                <td contentEditable="true" onblur="updateTableData()">10</td>
+            </tr>
+            <tr>
+                <td contentEditable="true" onblur="updateTableData()">Item 3</td>
+                <td contentEditable="true" onblur="updateTableData()"><a href="#">Link 3</a></td>
+                <td contentEditable="true" onblur="updateTableData()">$30.00</td>
+                <td contentEditable="true" onblur="updateTableData()">15</td>
+            </tr>
+            <tr>
+                <td contentEditable="true" onblur="updateTableData()">Item 4</td>
+                <td contentEditable="true" onblur="updateTableData()"><a href="#">Link 4</a></td>
+                <td contentEditable="true" onblur="updateTableData()">$40.00</td>
+                <td contentEditable="true" onblur="updateTableData()">20</td>
+            </tr>
+            <tr>
+                <td contentEditable="true" onblur="updateTableData()">Item 5</td>
+                <td contentEditable="true" onblur="updateTableData()"><a href="#">Link 5</a></td>
+                <td contentEditable="true" onblur="updateTableData()">$50.00</td>
+                <td contentEditable="true" onblur="updateTableData()">25</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button onclick="addRow()">Add Row</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
