@@ -14,6 +14,7 @@ function addRow() {
 	deleteCell.innerHTML = "<button onclick='deleteRow(this)'>Delete</button>"; // Add delete button
 }
 
+
 function deleteRow(btn) {
 	var row = btn.parentNode.parentNode;
 	row.parentNode.removeChild(row);
